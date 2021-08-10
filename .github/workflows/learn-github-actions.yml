@@ -5,4 +5,4 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
-      - run: echo "Hello!"
+      - run: ssh -i ~/Documentos/temp/id_ed25519 -o "StrictHostKeyChecking no" -o "UserKnownHostsFile /dev/null" evento@aux-vm sincroniza_frontend_site_estatico.sh"
